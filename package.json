@@ -1,0 +1,21 @@
+{
+  "name": "kobo-ecommerce-store",
+  "version": "1.0.0",
+  "description": "KOBO — Tactile Objects & Everyday Architecture e-commerce store built with HTML, CSS, JavaScript, Express.js, and SQLite.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "ecommerce",
+    "express",
+    "sqlite",
+    "vanilla-js"
+  ],
+  "license": "MIT",
+  "type": "commonjs",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}

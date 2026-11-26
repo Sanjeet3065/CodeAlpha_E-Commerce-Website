@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Object Details — KŌBŌ</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header-mount"></div>
+
+    <main>
+      <div class="container">
+        <nav class="breadcrumb-bar" id="pdp-breadcrumb" aria-label="Breadcrumb">
+          <a href="/">Collection</a>
+          <span>/</span>
+          <span>Loading…</span>
+        </nav>
+
+        <section id="pdp-root"></section>
+
+        <section class="related-section" id="related-section" style="display: none;">
+          <div class="section-header-row" style="margin-bottom: 0;">
+            <div>
+              <span class="mono-label">Complementary Pieces</span>
+              <h2 class="section-title">Paired Objects</h2>
+            </div>
+            <a href="/#collection" class="mono-label" style="color: var(--ink-primary); text-decoration: underline;">
+              View Full Catalog →
+            </a>
+          </div>
+          <div class="related-grid" id="related-grid"></div>
+        </section>
+      </div>
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="/js/store.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/product.js"></script>
+  </body>
+</html>

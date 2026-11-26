@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Member Store &amp; Account — KŌBŌ</title>
+    <link rel="stylesheet" href="/css/tokens.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <div id="site-header-mount"></div>
+
+    <main class="page-shell">
+      <div class="container">
+        <div class="workspace-header-row" id="account-header-row">
+          <div>
+            <span class="mono-label" id="workspace-eyebrow">Client Ledger</span>
+            <h1 id="workspace-heading">Member Storefront</h1>
+          </div>
+          <button type="button" class="btn btn-secondary btn-sm" id="logout-btn" style="display: none;">
+            Sign Out
+          </button>
+        </div>
+
+        <nav class="workspace-tabs" id="workspace-tabs" style="display: none;" aria-label="Account sections">
+          <button type="button" class="workspace-tab-btn is-active" data-tab="shop">
+            Browse Objects
+          </button>
+          <button type="button" class="workspace-tab-btn" data-tab="bag">
+            My Bag <span class="workspace-count" id="tab-bag-count">(0)</span>
+          </button>
+          <button type="button" class="workspace-tab-btn" data-tab="orders">
+            Order History <span class="workspace-count" id="tab-orders-count">(0)</span>
+          </button>
+          <button type="button" class="workspace-tab-btn" data-tab="profile">
+            Profile Details
+          </button>
+        </nav>
+
+        <div id="account-root"></div>
+      </div>
+    </main>
+
+    <div id="site-footer-mount"></div>
+
+    <script src="/js/store.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/catalog-view.js"></script>
+    <script src="/js/account.js"></script>
+  </body>
+</html>
